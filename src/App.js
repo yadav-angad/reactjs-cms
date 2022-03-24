@@ -3,6 +3,7 @@ import React from 'react';
 import DataTable from 'react-data-table-component';
 import deleteIcon from './images/delete.png';
 import editIcon from './images/edit.png';
+import HeaderComponent from './component/HeaderComponent';
 
 const customStyles = {
 	headRow: {
@@ -12,13 +13,13 @@ const customStyles = {
 	},
 	headCells: {
 		style: {
-			color: '#202124',
-			fontSize: '14px',
+			color: 'black',
+			fontSize: '15px',
 		},
 	},
 	rows: {
 		highlightOnHoverStyle: {
-			backgroundColor: 'rgb(230, 244, 244)',
+			backgroundColor: 'lightgray',
 			borderBottomColor: '#FFFFFF',
 			borderRadius: '25px',
 			outline: '1px solid #FFFFFF',
@@ -130,9 +131,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className='body'>
-        <div className='App-header'>
-          <span>Customer Management System</span>
-        </div>
+        <HeaderComponent />
         <DataTable className='App'
           columns={columns}
           data={this.state.customerDetails}

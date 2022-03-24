@@ -1,7 +1,9 @@
 .body {
   background-color: lightgray;
-  width: 100vw;
+  width: 90%;
   height: 100vh;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .App {
@@ -25,17 +27,15 @@
 
 .App-header {
   margin-bottom: 0.3%;
+  padding-left: 1%;
+  padding-right: 1%;
   background-color: #282c34;
-  min-height: 10vh;
-  /* padding-left: 5%; */
-  padding-right: 5%;
-  padding-right: 5%;
- 
+  min-height: 5vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  font-size: large;
   color: white;
 }
 
