@@ -5,10 +5,10 @@ export default function HeaderComponent() {
     return (
         <div className='App-header'>
             <div>
-                <span>Customer Management System</span>
+                <span>CMS</span>
             </div>
             <div>
-                <img src={UserIcon} alt="User" style={{ width: '40px', margin: 'auto', display: 'block' }} />
+                <img src={UserIcon} alt="User" style={{ width: '30px', margin: 'auto', display: 'block' }} />
             </div>
         </div>
     );
