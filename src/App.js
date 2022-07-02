@@ -4,6 +4,7 @@ import DataTable from 'react-data-table-component';
 import deleteIcon from './images/delete.png';
 import editIcon from './images/edit.png';
 import HeaderComponent from './component/HeaderComponent';
+import CustomerComponent from './component/CustomerComponent';
 
 const customStyles = {
 	headRow: {
@@ -132,6 +133,7 @@ export default class App extends React.Component {
     return (
       <div className='body'>
         <HeaderComponent />
+        <CustomerComponent />
         <DataTable className='App'
           columns={columns}
           data={this.state.customerDetails}
